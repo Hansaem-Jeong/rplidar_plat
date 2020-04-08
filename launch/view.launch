@@ -1,0 +1,5 @@
+<launch>
+	<include file="$(find rplidar_plat)/launch/rplidar_plat.launch" />
+
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find rplidar_plat)/rviz/obstacle_detector.rviz" />
+</launch>
